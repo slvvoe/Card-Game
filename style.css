@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(211, 216, 250);
+}
+
+#content {
+    width: 700px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    padding: 30px 0;
+}
+
+.player-box {
+    display: inline-block;
+    width: 50%;
+}
+
+.player-box .player-box__name {
+    display: inline-block;
+    width: 100%;
+    font-size: 2.3em;
+}
+
+
+.player-box .player-box__card, .player-box .player-box__score {
+    display: inline-block;
+    width: 90%;
+    margin-top: 7px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.player-box .player-box__score.player-box__score_winner {
+    background: rgb(99, 238, 99);
+    color: black;
+}
+
+.player-box .player-box__score.player-box__score_loser {
+    background: rgb(251, 39, 39);
+    color: black;
+}
+
+.player-box .player-box__score {
+    background: rgb(149, 119, 239);
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.7em;
+    border-radius: 60px;
+}
+
+.action-button {
+    display: inline-block;
+    color: white;
+    background: rgb(104, 14, 213);
+    margin: 7ch 0;
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background 0.4s ease;
+}
+
+.action-button:hover {
+    transition: background 0.4s ease;
+    background: rgb(51, 0, 139);
+}
+
+.action-button .action-button_try-again {
+    transition: background 0.4s ease;
+    background: rgb(240, 7, 54);
+}
+
+.action-button .action-button_try-again:hover {
+    transition: background 0.4s ease;
+    background: rgb(155, 0, 0);
+}
+@media screen and (max-width: 620px) {
+    body {font-size: 13px;}
+    #content {width: 95%;}
+}
+
+@media screen and (max-width: 320px) {
+    #content {
+        width: 90%;
+    }
+    .player-box, .action-button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 620px) {
+    body {font-size: 13px;}
+    #content {width: 95%;}
+}
+
+@media screen and (max-width: 269px) {
+    .action-button {width: 95%;}
+    .player-box {width: 100%;}
+    .player-box:nth-child(2) {margin-top: 7px;}
+}
